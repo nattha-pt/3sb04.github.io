@@ -1,0 +1,353 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Content</h1>
+<div id="section1">
+    <div class="card-body bg-secondary">
+        <h2>Kage no Jitsuryokusha ni Naritakute! (ชีวิตไม่ต้องเด่น ขอแค่เป็นเทพในเงา)</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/Ciy0kf5EE3E?si=NufMGndu0BBVcj5n"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> ไม่ใช่ทั้งตัวเอกและลาสต์บอส เป็นเพียงตัวตนที่ปิดบังความสามารถ
+                        และคอยแทรกแซงเหตุการณ์แสดงฝีมืออย่างลับๆ
+                        วัยรุ่นผู้ปรารถนาเป็นเทพในเงา วันหนึ่งเขาเสียชีวิตจากอุบัติเหตุและเกิดใหม่ในต่างโลก
+                        มีนามว่า "ซิด คาเกโน่" เขาพยายามกำจัดลัทธิชั่วร้ายในจินตนาการที่ดูเหมือนจะมีตัวตนจริง
+                        เหล่าลูกน้องสาวน้อยผู้นับถือซิดเพราะดันเข้าใจผิดว่าเขาเป็นเงาร่วมกันทำลายความชั่วร้ายบนโลก
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/bilibili.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.bilibili.tv/th/play/2089246"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section2">
+    <div class="card-body bg-secondary">
+        <h2>Mushoku Tensei (เกิดชาตินี้พี่ต้องเทพ)</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> เล่าเรื่องราวของหนุ่มบริสุทธิ์วัย 34 ปี
+                        ถูกครอบครัวไล่ออกจากบ้านและตระหนักว่าชีวิตของเขาสิ้นสุดลงแล้ว
+                        ขณะที่เขาเสียใจกับการเสียชีวิตรถบรรทุกชนเสียชีวิต เมื่อเขาตื่นขึ้นมา…
+                        เขาอยู่ในโลกแห่งดาบและเวทมนตร์! เกิดใหม่เป็นทารกชื่อ "Rudeus"
+                        เขาตัดสินใจว่าคราวนี้เขาจะใช้ชีวิตอย่างที่เขาไม่เสียใจ!
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/muse.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://youtube.com/playlist?list=PLIa05JMgYhhaPf7Bed0z2YaVAnLq1OZ53&si=jS-pHp8hDgP_ML1f"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/jSCKo90DMK4?si=wbncO3wgeYz-WGo4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section3">
+    <div class="card-body bg-secondary">
+        <h2>Boushoku no Berserk (จอมตะกละดาบคลั่ง)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/f3FwcHciZZ0?si=ukhTKIQ4wjpZFFM1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> อนิเมะแนวดาร์คแฟนตาซี ที่ดัดแปลงจากไลท์โนเวลของ Ichika Ishiki
+                        และมีฉบับมังงะด้วย อนิเมะเรื่องนี้เล่าถึงเรื่องราวของ เฟท หนุ่มที่มีสกิลมหาบาป "ตะกละ"
+                        ที่ทำให้เขาหิวตลอดเวลา และสามารถชิงสกิลและสเตตัสของคนที่เขาฆ่าได้
+                        เขาได้รับการช่วยเหลือจาก ร็อกซี่ อัศวินศักดิ์สิทธิ์ที่ใจดี และ กรีด ดาบที่สามารถพูดได้
+                        และเข้าร่วมกับองค์กรล่าปีศาจ ที่มีเป้าหมายที่จะกำจัดปีศาจที่อยู่ในโลกนี้
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/bilibili.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.bilibili.tv/th/play/2090442"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section4">
+    <div class="card-body bg-secondary">
+        <h2>Kimetsu no Yaiba (ดาบพิฆาตอสูร)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> "คามาโดะ ทันจิโร่" พบว่าครอบครัวของเขาถูกฆ่าตาย และผู้รอดชีวิตเพียงคนเดียว
+                        เนซึโกะ น้องสาวของเขา กลายเป็นปีศาจ อย่างไรก็ตาม
+                        เขาต้องประหลาดใจที่เนซึโกะยังคงแสดงสัญญาณของอารมณ์และความคิดของมนุษย์
+                        การเดินทางของทันจิโร่จึงเริ่มต้นขึ้นเพื่อค้นหาปีศาจที่ฆ่าครอบครัวของพวกเขาและเปลี่ยนน้องสาวของเขาให้เป็นมนุษย์อีกครั้ง
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/netflix.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.netflix.com/th/title/81091393?s=a&trkid=13747225&trg=more&vlang=th&clip="
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/VQGCKyvzIM4?si=CKB7L5matvJhGNEy"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section5">
+    <div class="card-body bg-secondary">
+        <h2>Chainsaw Man (มนุษย์เลื่อยยนต์)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/jk7QSGwupPA?si=_hbxBLLnoApo89oz"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> เด็นจิ เด็กหนุ่มผู้หาเลี้ยงชีพด้วยการเป็นนักล่าปิศาจ
+                        อาศัยอยู่ร่วมกับโปจิตะ "ปีศาจเลื่อยยนต์" ตัวหนึ่ง เขาก้มหน้าก้มตาทำงานเยี่ยงทาส
+                        เพื่อชดใช้หนี้สินของพ่อแม่ แต่ก็ยังโดนหักหลังและถูกฆ่า ชั่วขณะนั้น
+                        เด็นจิทำพันธสัญญากับโปจิตะ ครอบครองหัวใจของปิศาจ คืนชีพกลับมาเป็น "เชนซอว์แมน"
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/prime.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.primevideo.com/-/th/detail/0U7WWB2247GVA8C1747R209GKC/ref=atv_dp_share_cu_r"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section6">
+    <div class="card-body bg-secondary">
+        <h2>Shangri-La Frontier (เมื่อนักล่าเกมขยะท้าสู้ในเกมเทพ)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> อนิเมะเรื่องนี้เล่าถึงเรื่องราวของซันราคุ นักล่าเกมขยะที่ได้เข้าไปเล่นเกมเทพ VR MMORPG
+                        อย่าง "Shangri-La Frontier" ซึ่งเป็นเกมที่มีโลกกว้างใหญ่และเต็มไปด้วยความท้าทาย
+                        ซันราคุต้องใช้ทักษะการเล่นเกมของเขาเพื่อเอาชนะศัตรูและประสบการณ์ใหม่ๆ
+                        ที่เขาไม่เคยเห็นมาก่อน และยังได้พบกับเพื่อนใหม่มากมายในเกมด้วย
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/bilibili.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.primevideo.com/detail/Shangri-La-Frontier/0HDM7JAKHHLS4IQUMP59EC44J7"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/sS-KMGIehHU?si=X4xGNdJ4ksBpG9ed"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section7">
+    <div class="card-body bg-secondary">
+        <h2>Jujutsu Kaisen (มหาเวทย์ผนึกมาร)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/fecDCWdqxdY?si=j72AV3u6fL1eGdA0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> "อิตาโดริ ยูจิ"
+                        นักเรียนมัธยมปลายที่มีสมรรถภาพร่างกายสูงแต่เลี่ยงกีฬามาอยู่กลุ่มเหนือธรรมชาติ
+                        ก่อนปู่ตายได้ฝากให้เขาคิดถึงการช่วยผู้อื่นและตายอย่างเหมาะสม เขาได้มาพัวพันกับ
+                        "วัตถุต้องสาป" ที่ทำให้สัตว์ประหลาดปรากฏตัว ยูจิ
+                        และกลืนนิ้วต้องสาปเข้าไปเพื่อช่วยพวกรุ่นพี่ ถึงพลังคำสาปของนิ้วเทพอสูร "เรียวเมน สุคุนะ"
+                        จะมีพลังรุนแรง แต่กลับไม่สามารถควบคุมร่างเขาได้
+                        ทำให้กลุ่มสมาคมไสยเวทตั้งใจให้เขารวบรวมนิ้วต้องคำสาปของเทพอสูรทั้งหมดรวม 20 นิ้ว
+                        (มี 4 แขน) แล้วค่อยกำจัด ยูจิ ในภายหลัง
+                        ซึ่งเขายอมรับข้อเสนอนั้นเพื่อช่วยเหลือผู้คนที่อาจเดือดร้อนกับคำสาปเหล่านี้
+                        และเข้าเรียนในโรงเรียนไสยเวทที่โตเกียว มีเพื่อนในชั้นปี 1 อีกสองคน คือ เมกุมิ และ โนบาระ
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/netflix.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.netflix.com/th/title/81278456"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section8">
+    <div class="card-body bg-secondary">
+        <h2>Ragna Crimson (ตำนานนักล่ามังกร)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> "แร็กน่า" หนุ่มน้อยนักล่ามังกรฝีมือห่วยได้จับคู่กับ เลโอนิก้า
+                        เด็กสาวอัจฉริยะผู้ล่ามังกรได้มากมายและได้ออกล่ามังกรด้วยกันทุกวัน จนกระทั่งวันหนึ่ง
+                        กริมเวลต์ มังกรระดับสูงที่มาพร้อมกับความแข็งแกร่งยิ่งกว่ามังกรตัวใดก็ปรากฏตัวขึ้น
+                        ทำให้วันเวลาที่เคยเป็นมาต้องจบลง
+                        สิ่งที่แร็กน่าคิดขึ้นมาในสมองเมื่อเผชิญหน้ากับศัตรูสุดแกร่งคือ
+                        หลายวันที่ทนทุกข์ทรมานนี้คือฝันร้าย
+                        เมื่อเขาต้องเดินไปบนเส้นทางแห่งอนาคตที่โดดเดี่ยวและสิ้นหวังที่ไม่อาจปกป้องสิ่งใดไว้ได้พร้อมกับแสวงหาพลังอันแข็งแกร่ง
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/muse.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://youtube.com/playlist?list=PLIa05JMgYhhY7MeKl7gasee9O2Y63YiZL&si=dOXj4FfvoJQE36Iu"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/buUtE2MkOfY?si=Qg2BlXwj2ifbtbr0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section9">
+    <div class="card-body bg-secondary">
+        <h2>Spy x Family (สปาย x แฟมิลี)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/JP6vBnazpWI?si=KGss24thRsS8_bjJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> จะเป็นอย่างไรเมื่อ สายลับ นักฆ่า และผู้มีโทรจิต เสแสร้งใช้ชีวิตเป็นครอบครัวเดียวกัน
+                        โดยต่างมีแรงจูงใจซุกซ่อน พร้อมทั้งปิดบังตัวตนที่แท้จริงไม่ให้อีกฝ่ายรู้
+                        ในยุคสมัยที่แต่ละแต่ละประเทศต่างก็ห้ำหั่นกันอยู่เบื้องหลัง
+                        ออสทาเนียกับเวสทาลิสตกอยู่ในสถานะสงครามเย็นมาเป็นเวลานาน "สนธยา"
+                        สายลับฝีมือดีผู้สังกัดเวสทาลิส ได้รับภารกิจให้สืบข้อมูลเกี่ยวกับเดสมอนด์
+                        ชาวออสทาเนียเนื้อหาของภารกิจก็คือ ให้สร้างครอบครัว
+                        และให้แทรกซึมเข้าไปยังโรงเรียนชื่อดัง ทว่า "สนธยา" ได้พบกลับเป็นเด็กสาวผู้มีพลังอ่านใจ
+                        และภรรยาก็ดันเป็นนักฆ่า!
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/netflix.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.netflix.com/th/title/81511410"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="section10">
+    <div class="card-body bg-secondary">
+        <h2>Tokyo Revengers (โตเกียว รีเวนเจอร์ส)</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <br>
+                    <h4>เนื้อเรื่องย่อ</h4>
+                    <p> เรื่องราวของ "ทาเคมิจิ ฮานางากิ" ชายหนุ่มที่ใช้ชีวิตอย่างไร้จุดหมาย
+                        จนเขาได้ข่าวว่า ฮินาตะ อดีตแฟนสมัยมัธยมต้นถูกฆ่าตายโดย โตเกียวมันจิไค
+                        แก๊งที่ทรงอิทธิพลที่สุดในโตเกียว ทาเคมิจิจึงเริ่มคิดทบทวนถึงความผิดพลาดในอดีต
+                        ต่อมาเขาได้ประสบอุบัติเหตุถูกรถไฟชน ทำให้เขาย้อนเวลากลับไปเมื่อ 12 ปีก่อน ในปี 2005
+                        สมัยที่เขาเรียนชั้นมัธยมต้นและมีชื่อเสียงด้านชกต่อย
+                        ทำให้ทาเคมิจิตั้งใจใช้ความสามารถเพื่อเปลี่ยนอนาคต
+                        และแก้แค้นกับความไม่ได้เรื่องของตนเองในอดีต
+                    </p>
+                    <img src="{{ url_for('static', filename='images/iconlink/bilibili.png') }}" width="32px"
+                        height="32px" style="margin-right: 5px;">
+                    <a href="https://www.bilibili.tv/th/play/1020289"
+                        class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center" target="_blank">
+                        <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/OTlNyYfkM1s?si=g7xCB9qCsdS2X-7m"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}

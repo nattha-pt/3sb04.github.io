@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>About</h1>
+<div class="card-body bg-secondary">
+    <h3>เว็บไซต์นี้เป็นงานส่วนหนึ่งของรายวิชา 240-302 Advanced Computer Engineering Lab II</h3>
+    <h4>3SB04-Web App Framework (Flask)</h4>
+    <h4>นายณัฐพงค์ ปิติศรีพัฒนรากุล</h4>
+    <h5>ขอขอบคุณแหล่งข้อมูลที่ใช้ประกอบเป็นเนื้อหาเว็บไซต์ จาก
+        <a href="https://newmovieblog.com/10-anime-hit/"
+            style="color: #f48353; font-size: 24px;" target="_blank">NewMovieBlog
+        </a>
+    </h5>
+</div>
+<br>
+<h3 style="text-align: left;">คุณสมบัติของ Flask และ Python ที่ใช้งาน</h3>
+<div class="card-body bg-secondary" style="text-align: left;">
+    <div>
+        <h5>ฟังก์ชันพื้นฐานของ Flask</h5>
+        <img src="{{ url_for('static', filename='images/aboutimg/001.png') }}" width="80%" height="auto">
+        <ul>
+            <li>การนำเข้า Flask: จาก flask การนำเข้า Flask, render_template, request, jsonify -
+                การนำเข้าโมดูลที่จำเป็นจาก Flask</li>
+            <li>การสร้างแอป: app = Flask(__name__) - การสร้างอินสแตนซ์แอปพลิเคชัน Flask</li>
+            <li>การนำเข้าสื่อโดยใช้: url_for() - โค้ด HTML ที่ใช้ในเทมเพลตของ Flask เพื่อแสดงภาพจากแหล่งอ้างอิง</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Routes and Views</h5>
+        <img src="{{ url_for('static', filename='images/aboutimg/002.png') }}" width="80%" height="auto">
+        <ul>
+            <li>การกำหนดเส้นทาง: @app.route() - การใช้ @app.route เพื่อกำหนดเส้นทาง</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Rendering HTML Templates</h5>
+        <img src="{{ url_for('static', filename='images/aboutimg/003.png') }}" width="80%" height="auto">
+        <ul>
+            <li>การจัดการการส่งแบบฟอร์ม: render_template() - การแสดงผลเทมเพลต HTML โดยใช้เครื่องมือสร้างเทมเพลต Jinja2
+            </li>
+            <li>การดึงข้อมูลแบบฟอร์ม: request.form.get() - การเข้าถึงข้อมูลแบบฟอร์มที่ผู้ใช้ส่งผ่านวิธี POST</li>
+            <li>การประมวลผลข้อมูลแบบฟอร์ม: ฟังก์ชันเช่น calculate_score() ประมวลผลข้อมูลแบบฟอร์มที่ได้รับจากผู้ใช้</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Templates Inheritance</h5>
+        <img src="{{ url_for('static', filename='images/aboutimg/004.png') }}" width="80%" height="auto">
+        <ul>
+            <li>การ Reuse Components: extends() - การกำหนดเค้าโครงหรือ Layout
+                ของหน้าเว็บให้มีลักษณะเหมือนกันสำหรับการใช้ในหน้าอื่น ๆ</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Returning Responses</h5>
+        <img src="{{ url_for('static', filename='images/aboutimg/005.png') }}" width="80%" height="auto">
+        <ul>
+            <li>การ Return JSON Response: jsonify () - การส่งคืน การตอบสนอง JSON จากเส้นทาง Flask</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Fetching Data from the Backend (AJAX/Fetch)</h5>
+        <img src="{{ url_for('static', filename='images/aboutimg/006.png') }}" width="80%" height="auto">
+        <ul>
+            <li>การส่งข้อมูลไปยังแบ็กเอนด์: fetch('/calculate_score', {...}) - การใช้ Fetch API ของ JavaScript
+                เพื่อส่งข้อมูลแบบฟอร์มไปยังเซิร์ฟเวอร์เพื่อการประมวลผล</li>
+        </ul>
+    </div>
+    <div>
+        <h5>เครื่องมือและฟังก์ชันอื่น ๆ ที่นำมาใช้</h5>
+        <ul>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}

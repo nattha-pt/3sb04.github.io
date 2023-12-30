@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Quiz</h1>
+<form id="quizForm">
+    <div class="card-body bg-secondary mx-auto" style="width: 80%;">
+        <h4 style="text-align: left;">1.&rpar; Anime ที่แนะนำในเว็บมีทั้งหมดกี่เรื่อง</h4>
+        <div style="text-align: left;">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz01" id="aws01-01">
+                <label class="form-check-label" for="aws01-01">
+                    7 เรื่อง
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz01" id="aws01-02">
+                <label class="form-check-label" for="aws01-02">
+                    8 เรื่อง
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz01" id="aws01-03">
+                <label class="form-check-label" for="aws01-03">
+                    9 เรื่อง
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz01" id="aws01-04">
+                <label class="form-check-label" for="aws01-04">
+                    10 เรื่อง
+                </label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-body bg-secondary mx-auto" style="width: 80%;">
+        <h4 style="text-align: left;">2.&rpar; อนิเมะเรื่องใดบ้างที่สามารถรับชมได้ทันทีใน <img
+                src="../static/images/iconlink/netflix.png" width="24px" height="24px"> เมื่อคลิก <a
+                class="btn btn-danger btn-sm d-inline-flex me-1 align-items-center">
+                <span class="material-icons me-1">play_circle_filled</span>ดูเลย!
+            </a> บนเว็บไซต์นี้</h4>
+        <div style="text-align: left;">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz02" id="aws02-01">
+                <label class="form-check-label" for="aws02-01">
+                    Kimetsu no Yaiba (ดาบพิฆาตอสูร), Boushoku no Berserk (จอมตะกละดาบคลั่ง), Chainsaw Man
+                    (มนุษย์เลื่อยยนต์)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz02" id="aws02-02">
+                <label class="form-check-label" for="aws02-02">
+                    Kage no Jitsuryokusha ni Naritakute! (ชีวิตไม่ต้องเด่น ขอแค่เป็นเทพในเงา), Ragna Crimson
+                    (ตำนานนักล่ามังกร), Kimetsu no Yaiba (ดาบพิฆาตอสูร)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz02" id="aws02-03">
+                <label class="form-check-label" for="aws02-03">
+                    Kimetsu no Yaiba (ดาบพิฆาตอสูร), Jujutsu Kaisen (มหาเวทย์ผนึกมาร), Spy x Family (สปาย x แฟมิลี)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz02" id="aws02-04">
+                <label class="form-check-label" for="aws02-04">
+                    Tokyo Revengers (โตเกียว รีเวนเจอร์ส), Mushoku Tensei (เกิดชาตินี้พี่ต้องเทพ), Jujutsu Kaisen
+                    (มหาเวทย์ผนึกมาร)
+                </label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-body bg-secondary mx-auto" style="width: 80%;">
+        <h4 style="text-align: left;">3.&rpar; ตัวละครใดต่อไปนี้เป็นสายลับ</h4>
+        <div style="text-align: left;">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz03" id="aws03-01">
+                <label class="form-check-label" for="aws03-01">
+                    "เรียวเมน สุคุนะ" จากเรื่อง Jujutsu Kaisen (มหาเวทย์ผนึกมาร)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz03" id="aws03-02">
+                <label class="form-check-label" for="aws03-02">
+                    "สนธยา" จากเรื่อง Spy x Family (สปาย x แฟมิลี)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz03" id="aws03-03">
+                <label class="form-check-label" for="aws03-03">
+                    "คามาโดะ ทันจิโร่" จากเรื่อง Kimetsu no Yaiba (ดาบพิฆาตอสูร)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="quiz03" id="aws03-04">
+                <label class="form-check-label" for="aws03-04">
+                    "ทาเคมิจิ ฮานางากิ" จากเรื่อง Tokyo Revengers (โตเกียว รีเวนเจอร์ส)
+                </label>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#resultModal"
+        onclick="sendAnswers()">ส่งคำตอบ
+    </button>
+    <br>
+    <br>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2>คะแนนของคุณคือ: <span id="score">0</span> / 3</h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="closeModalButton" class="btn btn-danger" data-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+    function sendAnswers() {
+        let quizAnswers = {
+            quiz01: getSelectedValue('quiz01'),
+            quiz02: getSelectedValue('quiz02'),
+            quiz03: getSelectedValue('quiz03')
+        };
+
+        // ส่งคำตอบไปยัง Flask ด้วยฟอร์มข้อมูล
+        fetch('/calculate_score', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams(quizAnswers)
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('score').innerText = data.score;
+                $('#resultModal').modal('show');
+            });
+    }
+
+    function getSelectedValue(name) {
+        let options = document.getElementsByName(name);
+        for (let i = 0; i < options.length; i++) {
+            if (options[i].checked) {
+                return options[i].id; // ส่งค่า ID ของ radio button ที่ถูกเลือกกลับไป
+            }
+        }
+        return null;
+    }
+
+    // เพิ่ม event listener เมื่อปุ่ม 'ปิด' ใน modal ถูกคลิก
+    document.getElementById('closeModalButton').addEventListener('click', function () {
+        $('#resultModal').modal('hide'); // ซ่อน modal
+    });
+</script>
+
+{% endblock %}
